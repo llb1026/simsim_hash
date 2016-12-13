@@ -1,12 +1,25 @@
 <h1>&bull; TALK TO Simsimi &bull;</h1>
 <div class="underline">
 </div>
+<div id="main">
+<% @show.each do |q, a| %>
+    <% if @input == q %>
+        <% @qresult = q %>
+        <% a.each do |x| %>
+            <% @aresult = x %>
+        <% end %>
+          <h2>" <%= @qresult %> "</h2>
+          <h3>" <%= @aresult %> "</h3>
+    <% end %>
+<% end %>
 
-<div id="main" style="padding">
-  <h2>dddh</h2>
 </div>
 
-<form action="/simsim/learn" method="get" id="contact_form">
+<form action="/index" method="post">
+  <input type="text" name="input" placeholder="Ask to Simsimi!">
+</form>
+
+<form action="/learn" method="get" id="contact_form">
   <div class="submit">
     <input type="submit" value="TEACH SIMSIMI" id="form_button" />
   </div>

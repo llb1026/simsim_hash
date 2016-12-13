@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root 'simsim#index'
 
-  post 'simsim/index'
-  get 'simsim/index'
-  get 'simsim/learn'
+  post '/learn_process' => 'simsim#learn_process'
+  post '/index' => 'simsim#index'
+  get '/index' => 'simsim#index'
+  get '/learn' => 'simsim#learn'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

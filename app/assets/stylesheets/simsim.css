@@ -35,7 +35,7 @@ textarea {
 #container {
     border: solid 3px #474544;
     max-width: 768px;
-    margin: 60px auto;
+    margin: 100px auto;
     position: relative;
 }
 
@@ -49,7 +49,7 @@ textarea {
 
 form {
     padding: 37.5px;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 h1 {
@@ -63,10 +63,20 @@ h1 {
 
 h2 {
     color: #474544;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 3px;
+    text-align: right;
 }
+
+h3 {
+    color: #474544;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
 
 .underline {
     border-bottom: solid 2px #474544;
